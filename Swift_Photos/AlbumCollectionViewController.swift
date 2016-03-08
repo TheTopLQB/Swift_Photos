@@ -18,13 +18,12 @@ class AlbumCollectionViewController: UIViewController,UICollectionViewDelegateFl
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.collectionView.delegate = self;
-        self.collectionView.dataSource = self;
-        print(self.fetchResult.count);
 
         self.collectionView.registerNib(UINib.init(nibName: "AlbumCollectionViewCell", bundle: NSBundle.mainBundle()), forCellWithReuseIdentifier: "albumCell");
-        self.collectionView.backgroundColor = UIColor.whiteColor();
-        let layout = UICollectionViewLayout.init();
+        self.collectionView.backgroundColor = UIColor.redColor();
+        self.collectionView.delegate = self;
+        self.collectionView.dataSource = self;
+        let layout = UICollectionViewFlowLayout.init();
         self.collectionView.collectionViewLayout = layout;
         self.imageManager = PHImageManager.init();
         
@@ -35,6 +34,7 @@ class AlbumCollectionViewController: UIViewController,UICollectionViewDelegateFl
     }
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        print(self.fetchResult.count);
         return self.fetchResult.count;
     }
     

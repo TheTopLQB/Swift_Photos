@@ -7,7 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AlbumCollectionViewController" customModule="Swift_Photos" customModuleProvider="target">
             <connections>
-                <outlet property="collectionView" destination="5Sx-oY-GdB" id="ctD-fJ-b8e"/>
+                <outlet property="collectionView" destination="C7R-FI-4M1" id="I2J-gV-t05"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -16,9 +16,9 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="5Sx-oY-GdB">
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="C7R-FI-4M1">
                     <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="e5n-WJ-8aq">
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ujQ-FO-dCh">
                         <size key="itemSize" width="50" height="50"/>
                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
                         <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -28,10 +28,10 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="5Sx-oY-GdB" secondAttribute="bottom" id="QMC-h3-hrq"/>
-                <constraint firstItem="5Sx-oY-GdB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Usf-Jh-wZY"/>
-                <constraint firstItem="5Sx-oY-GdB" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="VyN-TD-pST"/>
-                <constraint firstAttribute="trailing" secondItem="5Sx-oY-GdB" secondAttribute="trailing" id="sbw-Yg-pyN"/>
+                <constraint firstItem="C7R-FI-4M1" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="WKs-CL-xPE"/>
+                <constraint firstAttribute="trailing" secondItem="C7R-FI-4M1" secondAttribute="trailing" id="axc-gw-jS7"/>
+                <constraint firstItem="C7R-FI-4M1" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="bv8-Kk-tE0"/>
+                <constraint firstAttribute="bottom" secondItem="C7R-FI-4M1" secondAttribute="bottom" id="pva-uh-deP"/>
             </constraints>
         </view>
     </objects>
